@@ -81,4 +81,17 @@ public class PostServiceTest {
         assertThat(postBeforeUpdate, is(postAfterUpdate));
         assertThat(postBeforeUpdate.getDescription(), is(not(postAfterUpdate.getDescription())));
     }
+
+    @Test
+    void updateById_whenPostToUpdateDoesNotExist_shouldReturnFallbackPost() {
+        // given
+        Post notExistingPost = new Post(-1, null, null, null, null);
+        PostRepository mockRepository = mock(PostRepository.class);
+        when(mockRepository.update(notExistingPost)).thenReturn(Optional.of(PostService.fallbackPost()));
+        PostService SUT = new PostService(mockRepository);
+        // when
+        Post result = SUT.update(notExistingPost);
+        // then
+        assertThat(result, is(PostService.fallbackPost()));
+    }
 }

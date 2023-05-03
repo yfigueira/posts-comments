@@ -26,11 +26,11 @@ class PostService {
         return repository.findById(id).orElse(FALLBACK_POST);
     }
 
-    static Post fallbackPost() {
-        return FALLBACK_POST;
+    Post update(Post post) {
+        return repository.update(post).orElse(FALLBACK_POST);
     }
 
-    Post update(Post post) {
-        return repository.update(post).get();
+    static Post fallbackPost() {
+        return FALLBACK_POST;
     }
 }
