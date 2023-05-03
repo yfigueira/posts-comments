@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.empty;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -65,5 +64,21 @@ public class PostServiceTest {
         Post result = SUT.findById(-1);
         // then
         assertThat(result, is(PostService.fallbackPost()));
+    }
+
+    @Test
+    void updateById_whenPostToUpdateExists_shouldReturnPostWithUpdatedDescription() {
+        // given
+        Post postBeforeUpdate = new Post(10, null, null, null, "Description before update");
+        Post postAfterUpdate = new Post(10, null, null, null, "Description after update");
+        PostRepository mockRepository = mock(PostRepository.class);
+        when(mockRepository.update(postBeforeUpdate)).thenReturn(Optional.of(postAfterUpdate));
+        PostService SUT = new PostService(mockRepository);
+        // when
+        Post result = SUT.update(postBeforeUpdate);
+        // then
+        assertThat(result, is(postAfterUpdate));
+        assertThat(postBeforeUpdate, is(postAfterUpdate));
+        assertThat(postBeforeUpdate.getDescription(), is(not(postAfterUpdate.getDescription())));
     }
 }

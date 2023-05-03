@@ -8,4 +8,6 @@ interface PostRepository {
     List<Post> findAll();
 
     Optional<Post> findById(Integer id);
+
+    Optional<Post> update(Post post);
 }

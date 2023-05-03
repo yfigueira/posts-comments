@@ -29,4 +29,8 @@ class PostService {
     static Post fallbackPost() {
         return FALLBACK_POST;
     }
+
+    Post update(Post post) {
+        return repository.update(post).get();
+    }
 }
