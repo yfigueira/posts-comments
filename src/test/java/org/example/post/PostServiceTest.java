@@ -53,4 +53,17 @@ public class PostServiceTest {
         // then
         assertThat(result, is(requestedPost));
     }
+
+    @Test
+    void findById_whenRequestedPostDoesNotExist_shouldReturnFallbackPost() {
+        // given
+        Post requestedPost = new Post(-1, null, null, null, null);
+        PostRepository mockRepository = mock(PostRepository.class);
+        when(mockRepository.findById(-1)).thenReturn(Optional.of(PostService.fallbackPost()));
+        PostService SUT = new PostService(mockRepository);
+        // when
+        Post result = SUT.findById(-1);
+        // then
+        assertThat(result, is(PostService.fallbackPost()));
+    }
 }

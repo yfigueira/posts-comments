@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/post/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/post/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/post/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/post/PostServiceTest.java" afterDir="false" />
     </list>
@@ -94,9 +93,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostServiceTest.findById_whenRequestedPostDoesNotExist_shouldReturnFallbackPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="posts-comments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.post.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.post" />
+      <option name="MAIN_CLASS_NAME" value="org.example.post.PostServiceTest" />
+      <option name="METHOD_NAME" value="findById_whenRequestedPostDoesNotExist_shouldReturnFallbackPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PostServiceTest" />
+        <item itemvalue="JUnit.PostServiceTest.findById_whenRequestedPostDoesNotExist_shouldReturnFallbackPost" />
         <item itemvalue="JUnit.PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts" />
         <item itemvalue="JUnit.PostServiceTest.findALl_whenRepositoryHasPosts_shouldReturnAllPosts" />
       </list>
