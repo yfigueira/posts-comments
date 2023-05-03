@@ -1,4 +1,4 @@
-package org.example.post;
+package org.example.posts;
 
 import org.junit.jupiter.api.Test;
 
