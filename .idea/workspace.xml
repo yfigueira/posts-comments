@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/post/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/post/PostServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,14 +33,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;post-service/find-all&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.post" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts">
+    <configuration name="PostServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="posts-comments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.post.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.post" />
+      <option name="MAIN_CLASS_NAME" value="org.example.post.PostServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceTest.findALl_whenRepositoryHasPosts_shouldReturnAllPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="posts-comments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.post.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.post" />
+      <option name="MAIN_CLASS_NAME" value="org.example.post.PostServiceTest" />
+      <option name="METHOD_NAME" value="findALl_whenRepositoryHasPosts_shouldReturnAllPosts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="posts-comments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.post.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.post" />
+      <option name="MAIN_CLASS_NAME" value="org.example.post.PostServiceTest" />
+      <option name="METHOD_NAME" value="findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts" />
+        <item itemvalue="JUnit.PostServiceTest.findALl_whenRepositoryHasPosts_shouldReturnAllPosts" />
+        <item itemvalue="JUnit.PostServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
