@@ -3,6 +3,7 @@ package org.example.post;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
@@ -38,5 +39,18 @@ public class PostServiceTest {
         List<Post> result = SUT.findAll();
         // then
         assertThat(result, is(empty()));
+    }
+
+    @Test
+    void findById_whenRequestedPostExists_shouldReturnRequestedPost() {
+        // given
+        Post requestedPost = new Post(10, null, null, null, null);
+        PostRepository mockRepository = mock(PostRepository.class);
+        when(mockRepository.findById(10)).thenReturn(Optional.of(requestedPost));
+        PostService SUT = new PostService(mockRepository);
+        // when
+        Post result = SUT.findById(10);
+        // then
+        assertThat(result, is(requestedPost));
     }
 }

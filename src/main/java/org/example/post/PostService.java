@@ -13,4 +13,8 @@ class PostService {
     List<Post> findAll() {
         return repository.findAll();
     }
+
+    Post findById(Integer id) {
+        return repository.findById(id).get();
+    }
 }

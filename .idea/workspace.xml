@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/post/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/post/PostServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/post/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/post/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/post/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/post/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/post/PostServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;post-service/find-all&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "post-service/find-by-id",
+    "last_opened_file_path": "C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.post" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts">
+  <component name="RunManager" selected="JUnit.PostServiceTest">
     <configuration name="PostServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="posts-comments" />
       <extension name="coverage">
@@ -97,9 +96,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostServiceTest" />
         <item itemvalue="JUnit.PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts" />
         <item itemvalue="JUnit.PostServiceTest.findALl_whenRepositoryHasPosts_shouldReturnAllPosts" />
-        <item itemvalue="JUnit.PostServiceTest" />
       </list>
     </recent_temporary>
   </component>
