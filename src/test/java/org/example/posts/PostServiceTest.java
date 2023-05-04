@@ -67,7 +67,7 @@ public class PostServiceTest {
     }
 
     @Test
-    void updateById_whenPostToUpdateExists_shouldReturnPostWithUpdatedDescription() {
+    void update_whenPostToUpdateExists_shouldReturnPostWithUpdatedDescription() {
         // given
         Post postBeforeUpdate = new Post(10, null, null, null, "Description before update");
         Post postAfterUpdate = new Post(10, null, null, null, "Description after update");
@@ -83,7 +83,7 @@ public class PostServiceTest {
     }
 
     @Test
-    void updateById_whenPostToUpdateDoesNotExist_shouldReturnFallbackPost() {
+    void update_whenPostToUpdateDoesNotExist_shouldReturnFallbackPost() {
         // given
         Post notExistingPost = new Post(-1, null, null, null, null);
         PostRepository mockRepository = mock(PostRepository.class);
