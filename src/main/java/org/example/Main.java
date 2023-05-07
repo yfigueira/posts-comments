@@ -4,7 +4,9 @@ import org.eclipse.jetty.annotations.AnnotationConfiguration;
 import org.eclipse.jetty.plus.webapp.EnvConfiguration;
 import org.eclipse.jetty.plus.webapp.PlusConfiguration;
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.util.component.LifeCycle;
 import org.eclipse.jetty.webapp.*;
+import org.example.utils.HibernateUtil;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -26,6 +28,13 @@ public class Main {
 
         Server server = new Server(8080);
         server.setHandler(webapp);
+
+        server.addEventListener(new LifeCycle.Listener() {
+            @Override
+            public void lifeCycleStopped(LifeCycle event) {
+                HibernateUtil.close();
+            }
+        });
 
         server.start();
         server.join();
