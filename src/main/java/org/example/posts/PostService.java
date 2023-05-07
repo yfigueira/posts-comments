@@ -2,6 +2,8 @@ package org.example.posts;
 
 import java.util.List;
 
+import static java.util.stream.Collectors.*;
+
 class PostService {
 
     private static final Post FALLBACK_POST = new Post(
@@ -18,8 +20,11 @@ class PostService {
         this.repository = repository;
     }
 
-    List<Post> findAll() {
-        return repository.findAll();
+    List<PostDTO> findAll() {
+        return repository.findAll()
+                .stream()
+                .map(PostDTO::new)
+                .collect(toList());
     }
 
     Post findById(Integer id) {

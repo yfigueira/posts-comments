@@ -23,7 +23,7 @@ public class PostServiceTest {
         ));
         PostService SUT = new PostService(mockRepository);
         // when
-        List<Post> result = SUT.findAll();
+        List<PostDTO> result = SUT.findAll();
         // then
         assertThat(result.size(), is(3));
     }
@@ -35,7 +35,7 @@ public class PostServiceTest {
         when(mockRepository.findAll()).thenReturn(List.of());
         PostService SUT = new PostService(mockRepository);
         // when
-        List<Post> result = SUT.findAll();
+        List<PostDTO> result = SUT.findAll();
         // then
         assertThat(result, is(empty()));
     }
