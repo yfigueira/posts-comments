@@ -1,6 +1,6 @@
 package org.example.posts;
 
-public class PostDTO {
+class PostDTO {
 
     private final Integer id;
     private final String url;
