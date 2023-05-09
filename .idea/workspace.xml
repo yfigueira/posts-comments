@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_posts_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +35,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "db",
     "last_opened_file_path": "C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -41,6 +43,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.post" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yo_fi\Projects\Programming\Java\programs\posts-comments\src\main\resources\db\migration" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
