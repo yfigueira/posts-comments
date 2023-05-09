@@ -7,7 +7,7 @@ import org.hibernate.Transaction;
 import java.util.List;
 import java.util.Optional;
 
-public class PostH2DBRepository implements PostRepository{
+class PostH2DBRepository implements PostRepository{
 
     @Override
     public List<Post> findAll() {
