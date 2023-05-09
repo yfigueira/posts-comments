@@ -51,12 +51,12 @@ class Post {
         return numberOfLikes;
     }
 
-    void setNumberOfLikes(Integer numberOfLikes) {
-        this.numberOfLikes = numberOfLikes;
-    }
-
     String getDescription() {
         return description;
+    }
+
+    void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

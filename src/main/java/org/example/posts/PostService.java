@@ -16,6 +16,10 @@ class PostService {
 
     private final PostRepository repository;
 
+    PostService() {
+        this(new PostH2DBRepository());
+    }
+
     PostService(PostRepository repository) {
         this.repository = repository;
     }
