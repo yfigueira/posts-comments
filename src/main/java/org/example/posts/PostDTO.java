@@ -10,11 +10,11 @@ class PostDTO {
         this.url = post.getUrl();
     }
 
-    Integer getId() {
+    public Integer getId() {
         return id;
     }
 
-    String getUrl() {
+    public String getUrl() {
         return url;
     }
 }
