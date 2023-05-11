@@ -12,20 +12,20 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
-@WebServlet(name = "Post", urlPatterns = {"/api/posts"})
-public class PostServlet extends HttpServlet {
+@WebServlet(name = "AllPosts", urlPatterns = {"/api/posts"})
+public class AllPostsServlet extends HttpServlet {
 
-    private final Logger logger = LoggerFactory.getLogger(PostServlet.class);
+    private final Logger logger = LoggerFactory.getLogger(AllPostsServlet.class);
 
     private final ObjectMapper mapper;
 
     private final PostService service;
 
-    public PostServlet() {
+    public AllPostsServlet() {
         this(new ObjectMapper(), new PostService());
     }
 
-    PostServlet(ObjectMapper mapper, PostService service) {
+    AllPostsServlet(ObjectMapper mapper, PostService service) {
         this.mapper = mapper;
         this.service = service;
     }
