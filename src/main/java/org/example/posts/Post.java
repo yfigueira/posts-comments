@@ -35,23 +35,23 @@ class Post {
         this.description = description;
     }
 
-    Integer getId() {
+    public Integer getId() {
         return id;
     }
 
-    String getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    LocalDate getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    Integer getNumberOfLikes() {
+    public Integer getNumberOfLikes() {
         return numberOfLikes;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return description;
     }
 
