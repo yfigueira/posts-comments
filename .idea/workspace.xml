@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="" />
+    <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/comments/CommentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,20 +38,21 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/Spring/RESTWebServices/student-service",
+    "git-widget-placeholder": "comment-service",
+    "last_opened_file_path": "C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.comments" />
       <recent name="org.example.post" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yo_fi\Projects\Programming\Java\programs\posts-comments\src\main\resources\db\migration" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CommentServiceTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="posts-comments" />
@@ -56,6 +62,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="posts-comments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.comments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.comments" />
+      <option name="MAIN_CLASS_NAME" value="org.example.comments.CommentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,22 +92,6 @@
       <option name="PACKAGE_NAME" value="org.example.post" />
       <option name="MAIN_CLASS_NAME" value="org.example.posts.PostServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostServiceTest.findALl_whenRepositoryHasPosts_shouldReturnAllPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="posts-comments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.posts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.post" />
-      <option name="MAIN_CLASS_NAME" value="org.example.posts.PostServiceTest" />
-      <option name="METHOD_NAME" value="findALl_whenRepositoryHasPosts_shouldReturnAllPosts" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentServiceTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PostServiceTest" />
         <item itemvalue="JUnit.PostServiceTest.findById_whenRequestedPostDoesNotExist_shouldReturnFallbackPost" />
         <item itemvalue="JUnit.PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts" />
-        <item itemvalue="JUnit.PostServiceTest.findALl_whenRepositoryHasPosts_shouldReturnAllPosts" />
       </list>
     </recent_temporary>
   </component>
