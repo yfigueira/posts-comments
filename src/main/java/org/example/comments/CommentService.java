@@ -4,9 +4,9 @@ import java.util.List;
 
 public class CommentService {
 
-    private CommentRepository repository;
+    private final CommentRepository repository;
 
-    public CommentService(CommentRepository repository) {
+    CommentService(CommentRepository repository) {
         this.repository = repository;
     }
 

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/UnauthorizedCommentException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/comments/CommentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/comments/CommentServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +31,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "comment-service",
-    "last_opened_file_path": "C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;comment-service&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.comments" />
