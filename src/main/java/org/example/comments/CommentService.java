@@ -20,4 +20,11 @@ public class CommentService {
 
         return repository.add(newComment);
     }
+
+    Comment update(Comment comment) {
+
+        if (comment.getContent() == null) throw new UnauthorizedCommentException("Empty Comment");
+
+        return repository.update(comment).orElse(null);
+    }
 }
