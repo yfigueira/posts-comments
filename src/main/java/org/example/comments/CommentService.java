@@ -27,4 +27,8 @@ public class CommentService {
 
         return repository.update(comment).orElse(null);
     }
+
+    Integer delete(Comment comment) {
+        return repository.delete(comment).orElse(null);
+    }
 }

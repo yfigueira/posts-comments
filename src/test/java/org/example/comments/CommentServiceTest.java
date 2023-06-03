@@ -8,8 +8,7 @@ import java.util.Optional;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class CommentServiceTest {
 
@@ -103,6 +102,32 @@ public class CommentServiceTest {
         CommentService SUT = new CommentService(mockRepository);
         // when
         Comment result = SUT.update(commentToUpdate);
+        // then
+        assertThat(result, is(nullValue()));
+    }
+
+    @Test
+    void delete_whenCommentToDeleteExists_shouldReturnDeletedCommentId() {
+        // given
+        Comment commentToDelete = new Comment(1, null,  null, 1);
+        CommentRepository mockRepository = mock(CommentRepository.class);
+        when(mockRepository.delete(commentToDelete)).thenReturn(Optional.of(1));
+        CommentService SUT = new CommentService(mockRepository);
+        // when
+        Integer result = SUT.delete(commentToDelete);
+        // then
+        assertThat(result, is(1));
+    }
+
+    @Test
+    void delete_whenCommentToDeleteDoesNotExist_shouldReturnNull() {
+        // given
+        Comment commentToDelete = new Comment(-1, null, null, 1);
+        CommentRepository mockRepository = mock(CommentRepository.class);
+        when(mockRepository.delete(commentToDelete)).thenReturn(Optional.empty());
+        CommentService SUT = new CommentService(mockRepository);
+        // when
+        Integer result = SUT.delete(commentToDelete);
         // then
         assertThat(result, is(nullValue()));
     }

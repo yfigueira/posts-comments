@@ -11,4 +11,6 @@ public interface CommentRepository {
     Comment add(Comment newComment);
 
     Optional<Comment> update(Comment comment);
+
+    Optional<Integer> delete(Comment comment);
 }
