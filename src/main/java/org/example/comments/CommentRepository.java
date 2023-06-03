@@ -13,4 +13,6 @@ public interface CommentRepository {
     Optional<Comment> update(Comment comment);
 
     Optional<Integer> delete(Comment comment);
+
+    Integer countByPostId(Integer postId);
 }

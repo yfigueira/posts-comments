@@ -131,4 +131,17 @@ public class CommentServiceTest {
         // then
         assertThat(result, is(nullValue()));
     }
+
+    @Test
+    void countByPostId_shouldReturnNumberOfCommentsOnAPost() {
+        // given
+        Integer postId = 1;
+        CommentRepository mockRepository = mock(CommentRepository.class);
+        when(mockRepository.countByPostId(postId)).thenReturn(3);
+        CommentService SUT = new CommentService(mockRepository);
+        // when
+        Integer result = SUT.countByPostId(postId);
+        // then
+        assertThat(result, is(3));
+    }
 }

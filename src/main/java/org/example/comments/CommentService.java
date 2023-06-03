@@ -31,4 +31,8 @@ public class CommentService {
     Integer delete(Comment comment) {
         return repository.delete(comment).orElse(null);
     }
+
+    Integer countByPostId(Integer postId) {
+        return repository.countByPostId(postId);
+    }
 }
