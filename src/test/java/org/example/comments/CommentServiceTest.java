@@ -10,31 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 public class CommentServiceTest {
-
-    @Test
-    void add_whenNewCommentContentIsNotEmpty_shouldReturnAddedComment() {
-        // given
-        Comment newComment = new Comment(null, "new comment content", null, 1);
-        Comment newCommentFromRepo = new Comment(1, "new comment content", null, 1);
-        CommentRepository mockRepository = mock(CommentRepository.class);
-        when(mockRepository.add(newComment)).thenReturn(newCommentFromRepo);
-        CommentService SUT = new CommentService(mockRepository);
-        // when
-        Comment result = SUT.add(newComment);
-        // then
-        assertThat(result, is(newCommentFromRepo));
-    }
-
-    @Test
-    void add_whenNewCommentContentIsEmpty_shouldThrowUnauthorizedCommentException() {
-        // given
-        Comment newComment = new Comment(null, null, null, 1);
-        CommentService SUT = new CommentService(null);
-        // when + then
-        assertThrows(UnauthorizedCommentException.class, () -> {
-            SUT.add(newComment);
-        });
-    }
+    
     @Test
     void update_whenUpdatedCommentContentIsNotEmpty_shouldReturnCommentAfterUpdate() {
         // given

@@ -1,11 +1,8 @@
 package org.example.comments;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface CommentRepository {
-
-    Comment add(Comment newComment);
 
     Optional<Comment> update(Comment comment);
 
