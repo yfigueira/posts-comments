@@ -5,9 +5,6 @@ import java.util.Optional;
 
 public interface CommentRepository {
 
-
-    List<Comment> findByPostId(Integer postId);
-
     Comment add(Comment newComment);
 
     Optional<Comment> update(Comment comment);

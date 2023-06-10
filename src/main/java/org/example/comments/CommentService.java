@@ -10,8 +10,8 @@ public class CommentService {
         this.repository = repository;
     }
 
-    List<Comment> findByPostId(Integer postId) {
-        return repository.findByPostId(postId);
+    CommentService() {
+        this(new CommentH2DBRepository());
     }
 
     Comment add(Comment newComment) throws UnauthorizedCommentException {

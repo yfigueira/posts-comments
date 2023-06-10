@@ -1,8 +1,10 @@
 package org.example.posts;
 
 import jakarta.persistence.*;
+import org.example.comments.Comment;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "posts")
@@ -24,6 +26,12 @@ class Post {
 
     @Column(name = "description")
     private String description;
+
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            fetch = FetchType.EAGER)
+    @JoinColumn(name = "post_id")
+    private List<Comment> comments;
 
     Post() { }
 
@@ -59,6 +67,10 @@ class Post {
         this.description = description;
     }
 
+    public List<Comment> getComments() {
+        return comments;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -72,5 +84,9 @@ class Post {
     @Override
     public int hashCode() {
         return id.hashCode();
+    }
+
+    void addComment(Comment comment) {
+        comments.add(comment);
     }
 }

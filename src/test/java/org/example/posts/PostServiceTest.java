@@ -1,12 +1,16 @@
 package org.example.posts;
 
+import org.example.comments.Comment;
+import org.example.comments.UnauthorizedCommentException;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -93,5 +97,28 @@ public class PostServiceTest {
         Post result = SUT.update(notExistingPost);
         // then
         assertThat(result, is(PostService.fallbackPost()));
+    }
+
+    @Test
+    void addComment_whenContentIsValid_shouldReturnNewListOfComments() {
+        // given
+        Comment newComment = new Comment("new content", null, 1);
+        PostRepository mockRepository = mock(PostRepository.class);
+        when(mockRepository.addComment(newComment)).thenReturn(List.of(
+                new Comment(1, "new content", LocalDate.now(), 1)
+        ));
+        PostService SUT = new PostService(mockRepository);
+        // when
+        List<Comment> result = SUT.addComment(newComment);
+        // then
+        assertThat(result, hasSize(1));
+    }
+
+    @Test
+    void addComment_whenContentIsNull_shouldThrowUnauthorizedCommentException() {
+        // given
+        PostService SUT = new PostService(null);
+        // when + then
+        assertThrows(UnauthorizedCommentException.class, () -> SUT.addComment(new Comment(1, null, null, 1)));
     }
 }

@@ -1,5 +1,8 @@
 package org.example.posts;
 
+import org.example.comments.Comment;
+import org.example.comments.UnauthorizedCommentException;
+
 import java.util.List;
 
 import static java.util.stream.Collectors.*;
@@ -41,5 +44,10 @@ class PostService {
 
     static Post fallbackPost() {
         return FALLBACK_POST;
+    }
+
+    List<Comment> addComment(Comment comment) {
+        if (comment.getContent() == null) throw new UnauthorizedCommentException("Empty Content");
+        return repository.addComment(comment);
     }
 }

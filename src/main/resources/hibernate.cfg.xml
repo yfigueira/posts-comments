@@ -32,6 +32,7 @@
         <property name="hbm2ddl.auto">validate</property>
 
         <mapping class="org.example.posts.Post"/>
+        <mapping class="org.example.comments.Comment"/>
 
     </session-factory>
 

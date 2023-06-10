@@ -5,7 +5,7 @@ public class UnauthorizedCommentException extends RuntimeException {
     UnauthorizedCommentException() {
     }
 
-    UnauthorizedCommentException(String message) {
+    public UnauthorizedCommentException(String message) {
         super(message);
     }
 }

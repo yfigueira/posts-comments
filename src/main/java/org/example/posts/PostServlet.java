@@ -8,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.example.comments.Comment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -83,5 +84,14 @@ public class PostServlet extends HttpServlet {
             resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             mapper.writeValue(resp.getOutputStream(), PostService.fallbackPost());
         }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String postId = req.getPathInfo().substring(1);
+        logger.info("New Comment On Post " + postId + " Added At " + LocalDateTime.now());
+
+        Comment newComment = mapper.readValue(req.getInputStream(), Comment.class);
+        mapper.writeValue(resp.getOutputStream(), service.addComment(newComment));
     }
 }

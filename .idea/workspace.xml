@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentH2DBRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/UnauthorizedCommentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/UnauthorizedCommentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostH2DBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostH2DBRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/comments/CommentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/comments/CommentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/posts/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/posts/PostServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yo_fi/Projects/Programming/Java/udemy-courses/ambitny-start/todo-no-spring&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.comments" />
@@ -52,7 +62,7 @@
       <recent name="C:\Users\yo_fi\Projects\Programming\Java\programs\posts-comments\src\main\resources\db\migration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommentServiceTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="posts-comments" />
@@ -130,9 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CommentServiceTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PostServiceTest" />
+        <item itemvalue="JUnit.CommentServiceTest" />
         <item itemvalue="JUnit.PostServiceTest.findById_whenRequestedPostDoesNotExist_shouldReturnFallbackPost" />
         <item itemvalue="JUnit.PostServiceTest.findAll_whenRepositoryIsEmpty_ShouldReturnEmptyListOfPosts" />
       </list>
@@ -148,5 +158,15 @@
       <updated>1683106008068</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.AnnotationException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

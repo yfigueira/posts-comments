@@ -1,9 +1,11 @@
 package org.example.posts;
 
+import org.example.comments.Comment;
 import org.example.utils.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -52,5 +54,21 @@ class PostH2DBRepository implements PostRepository{
         session.close();
 
         return Optional.ofNullable(result);
+    }
+
+    @Override
+    public List<Comment> addComment(Comment newComment) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+
+        newComment.setDate(LocalDate.now());
+
+        Post post = session.get(Post.class, newComment.getPostId());
+        post.addComment(newComment);
+
+        transaction.commit();
+        session.close();
+
+        return post.getComments();
     }
 }

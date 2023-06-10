@@ -1,21 +1,37 @@
 package org.example.comments;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "comments")
 public class Comment {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
+    @Column(name = "content")
     private String content;
 
+    @Column(name = "date")
     private LocalDate date;
 
+    @Column(name = "post_id")
     private Integer postId;
 
     Comment() { }
 
-    Comment(Integer id, String content, LocalDate date, Integer postId) {
+    public Comment(Integer id, String content, LocalDate date, Integer postId) {
         this.id = id;
+        this.content = content;
+        this.date = date;
+        this.postId = postId;
+    }
+
+    public Comment(String content, LocalDate date, Integer postId) {
         this.content = content;
         this.date = date;
         this.postId = postId;
@@ -37,7 +53,7 @@ public class Comment {
         return date;
     }
 
-    void setDate(LocalDate date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
