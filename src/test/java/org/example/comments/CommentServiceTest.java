@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 public class CommentServiceTest {
-    
+
     @Test
     void update_whenUpdatedCommentContentIsNotEmpty_shouldReturnCommentAfterUpdate() {
         // given

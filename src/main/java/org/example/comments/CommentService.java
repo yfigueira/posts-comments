@@ -1,7 +1,5 @@
 package org.example.comments;
 
-import java.util.List;
-
 public class CommentService {
 
     private final CommentRepository repository;

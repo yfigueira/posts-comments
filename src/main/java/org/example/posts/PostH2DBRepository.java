@@ -36,8 +36,6 @@ class PostH2DBRepository implements PostRepository{
         transaction.commit();
         session.close();
 
-        System.out.println(result);
-
         return Optional.ofNullable(result);
     }
 
