@@ -18,9 +18,4 @@ public class CommentH2DBRepository  implements  CommentRepository{
     public Optional<Integer> delete(Comment comment) {
         return Optional.empty();
     }
-
-    @Override
-    public Integer countByPostId(Integer postId) {
-        return null;
-    }
 }

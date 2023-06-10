@@ -2,7 +2,6 @@ package org.example.comments;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
 import java.util.Optional;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -100,18 +99,5 @@ public class CommentServiceTest {
         Integer result = SUT.delete(commentToDelete);
         // then
         assertThat(result, is(nullValue()));
-    }
-
-    @Test
-    void countByPostId_shouldReturnNumberOfCommentsOnAPost() {
-        // given
-        Integer postId = 1;
-        CommentRepository mockRepository = mock(CommentRepository.class);
-        when(mockRepository.countByPostId(postId)).thenReturn(3);
-        CommentService SUT = new CommentService(mockRepository);
-        // when
-        Integer result = SUT.countByPostId(postId);
-        // then
-        assertThat(result, is(3));
     }
 }

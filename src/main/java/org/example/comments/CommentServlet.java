@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpServlet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 @WebServlet(name = "Comment", urlPatterns = {"/api/comments/*"})
 public class CommentServlet extends HttpServlet {
 

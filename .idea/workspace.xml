@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b268364-90c5-46b5-b45d-ea014fb9099c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentH2DBRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentH2DBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentH2DBRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/UnauthorizedCommentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/UnauthorizedCommentException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostH2DBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostH2DBRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/posts/PostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/posts/PostServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/comments/CommentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/comments/CommentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/comments/CommentServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/posts/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/posts/PostServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
