@@ -25,6 +25,15 @@ public class CommentH2DBRepository  implements  CommentRepository{
 
     @Override
     public Optional<Integer> delete(Comment comment) {
-        return Optional.empty();
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+
+        Integer deletedCommentId = comment.getId();
+        session.remove(comment);
+
+        transaction.commit();
+        session.close();
+
+        return Optional.ofNullable(deletedCommentId);
     }
 }
